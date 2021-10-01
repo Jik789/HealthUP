@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* Переменные проекта */
 /* Обнуление стилей */
 *,
 ::before,
@@ -36,6 +37,8 @@ h6 {
 
 html,
 body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   height: 100%;
   font-family: 'Rubik', sans-serif;
   font-size: 24px;
@@ -43,17 +46,24 @@ body {
   color: #000;
 }
 
-/* Переменные проекта */
+@media (max-width: 1024px) {
+  html,
+  body {
+    font-size: 16px;
+  }
+}
+
 /* Общие и технические классы */
 ._main-container {
   position: relative;
   overflow: hidden;
-  min-height: 100%;
 }
 
 ._container {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   position: relative;
-  max-width: 1440px;
+  max-width: 1480px;
   padding: 0 20px;
   margin: 0 auto;
 }
@@ -67,19 +77,13 @@ h1 {
 
 @media (max-width: 768px) {
   h1 {
-    font-size: 44px;
-    line-height: 130%;
-    font-weight: bold;
-    text-transform: uppercase;
+    font-size: 60px 44px;
   }
 }
 
 @media (max-width: 320px) {
   h1 {
     font-size: 30px;
-    line-height: 120%;
-    font-weight: bold;
-    text-transform: uppercase;
   }
 }
 
@@ -93,18 +97,12 @@ h2 {
 @media (max-width: 768px) {
   h2 {
     font-size: 30px;
-    line-height: 120%;
-    font-weight: bold;
-    text-transform: uppercase;
   }
 }
 
 @media (max-width: 320px) {
   h2 {
     font-size: 26px;
-    line-height: 110%;
-    font-weight: bold;
-    text-transform: uppercase;
   }
 }
 
@@ -118,19 +116,26 @@ h3 {
 @media (max-width: 768px) {
   h3 {
     font-size: 26px;
-    line-height: 110%;
-    font-weight: bold;
-    text-transform: uppercase;
   }
 }
 
 @media (max-width: 320px) {
   h3 {
     font-size: 24px;
-    line-height: 100%;
-    font-weight: bold;
-    text-transform: uppercase;
   }
 }
 
-/* Шапка проекта */
+/* Шапка проекта 27px 131px 75px 179px*/
+.page-header {
+  background-color: #F4F9E2;
+}
+
+.header {
+  padding: 27px 131px 75px 179px;
+}
+
+@media (max-width: 1024px) {
+  .header {
+    padding: 20px 70px 45px 70px;
+  }
+}

@@ -1,1 +1,15 @@
-/* Шапка проекта */
+/* Шапка проекта 27px 131px 75px 179px*/
+
+.page-header {
+  background-color: $fone_1;
+}
+
+.header {
+  padding: 27px 131px 75px 179px;
+}
+
+@media (max-width: $md1+px) {
+  .header {
+    padding: 20px 70px 45px 70px;
+  }
+}
