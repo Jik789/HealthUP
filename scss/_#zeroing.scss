@@ -1,3 +1,5 @@
+/* Обнуление стилей */
+
 *,
 ::before,
 ::after {
@@ -35,21 +37,8 @@ h6 {
 html,
 body {
   height: 100%;
-  font-family: "Roboto";
-  font-size: 16px;
+  font-family: 'Rubik', sans-serif;
+  font-size: 24px;
   line-height: 1.5;
   color: #000;
-}
-
-._main-container {
-  position: relative;
-  overflow: hidden;
-  min-height: 100%;
-}
-
-._container {
-  position: relative;
-  max-width: 1240px;
-  padding: 0 20px;
-  margin: 0 auto;
 }

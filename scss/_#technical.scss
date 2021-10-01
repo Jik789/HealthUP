@@ -1,50 +1,5 @@
-@charset "UTF-8";
-/* Обнуление стилей */
-*,
-::before,
-::after {
-  margin: 0;
-  padding: 0;
-  border: 0;
-}
-
-a {
-  text-decoration: none;
-  color: #ffffff;
-}
-
-img {
-  vertical-align: top;
-}
-
-ul,
-ol,
-li {
-  list-style: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: inherit;
-  font-size: inherit;
-  line-height: 1.5;
-}
-
-html,
-body {
-  height: 100%;
-  font-family: 'Rubik', sans-serif;
-  font-size: 24px;
-  line-height: 1.5;
-  color: #000;
-}
-
-/* Переменные проекта */
 /* Общие и технические классы */
+
 ._main-container {
   position: relative;
   overflow: hidden;
@@ -65,7 +20,7 @@ h1 {
   text-transform: uppercase;
 }
 
-@media (max-width: 768px) {
+@media (max-width: $md1+px) {
   h1 {
     font-size: 44px;
     line-height: 130%;
@@ -74,7 +29,7 @@ h1 {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: $md2+px) {
   h1 {
     font-size: 30px;
     line-height: 120%;
@@ -90,7 +45,7 @@ h2 {
   text-transform: uppercase;
 }
 
-@media (max-width: 768px) {
+@media (max-width: $md1+px) {
   h2 {
     font-size: 30px;
     line-height: 120%;
@@ -99,7 +54,7 @@ h2 {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: $md2+px) {
   h2 {
     font-size: 26px;
     line-height: 110%;
@@ -115,7 +70,7 @@ h3 {
   text-transform: uppercase;
 }
 
-@media (max-width: 768px) {
+@media (max-width: $md1+px) {
   h3 {
     font-size: 26px;
     line-height: 110%;
@@ -124,7 +79,7 @@ h3 {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: $md2+px) {
   h3 {
     font-size: 24px;
     line-height: 100%;
@@ -132,5 +87,3 @@ h3 {
     text-transform: uppercase;
   }
 }
-
-/* Шапка проекта */

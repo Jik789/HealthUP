@@ -1,2 +1,4 @@
-@import "_zeroing"; // Обнуление стилей проекта
-@import "_header.scss"; // Шапка проекта
+@import "_#zeroing"; // Обнуление стилей проекта
+@import "_#variables"; // Переменные
+@import "_#technical"; // Технические и общие стили стилей проекта
+@import "_header"; // Шапка проекта
