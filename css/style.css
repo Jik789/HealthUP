@@ -131,7 +131,7 @@ h3 {
   }
 }
 
-/* Шапка проекта 27px 131px 75px 179px*/
+/* Шапка проекта */
 .page-header {
   background-color: #F4F9E2;
 }
@@ -369,3 +369,5 @@ h3 {
 .title__btn-2:hover {
   color: white;
 }
+
+/* Первая секция (Домашняя) */
