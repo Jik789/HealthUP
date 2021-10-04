@@ -20,9 +20,15 @@ h1 {
   text-transform: uppercase;
 }
 
+@media (max-width: $md1+px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+
 @media (max-width: $md2+px) {
   h1 {
-    font-size: 36px;
+    font-size: 34px;
   }
 }
 
