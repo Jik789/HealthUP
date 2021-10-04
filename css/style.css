@@ -137,7 +137,7 @@ h3 {
 }
 
 .header {
-  padding: 27px 140px 75px 140px;
+  padding: 30px 140px 75px 140px;
 }
 
 @media (max-width: 1024px) {
@@ -462,7 +462,7 @@ h3 {
 
 @media (max-width: 560px) {
   .home__specification {
-    font-size: 22px;
+    font-size: 18px;
   }
 }
 
@@ -493,5 +493,88 @@ h3 {
 @media (max-width: 560px) {
   .home__photo {
     margin: 20px 0 0 0;
+  }
+}
+
+/* Вторая секция (О компании) */
+.about {
+  padding: 30px 140px 30px 140px;
+}
+
+@media (max-width: 1024px) {
+  .about {
+    padding: 20px 70px 20px 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about {
+    padding: 10px 30px 20px 30px;
+  }
+}
+
+@media (max-width: 560px) {
+  .about {
+    padding: 10px 20px 20px 20px;
+  }
+}
+
+.about__title {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  margin: 40px 0 0 0;
+}
+
+@media (max-width: 560px) {
+  .about__title {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 3fr;
+        grid-template-rows: 1fr 3fr;
+  }
+}
+
+.about__name {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #22356F;
+}
+
+.about__discription {
+  font-size: 24px;
+  color: #22356F;
+}
+
+@media (max-width: 1024px) {
+  .about__discription {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .about__discription {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 560px) {
+  .about__discription {
+    font-size: 18px;
+  }
+}
+
+.about__footer {
+  margin: 50px 0 0 0;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 768px) {
+  .about__footer {
+    font-size: 14px;
   }
 }
