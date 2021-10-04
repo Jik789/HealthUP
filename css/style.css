@@ -401,8 +401,8 @@ h3 {
   .home {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    -ms-grid-rows: 6fr 5fr;
-        grid-template-rows: 6fr 5fr;
+    -ms-grid-rows: 6fr 4fr;
+        grid-template-rows: 6fr 4fr;
   }
 }
 
@@ -577,4 +577,92 @@ h3 {
   .about__footer {
     font-size: 14px;
   }
+}
+
+/* Третья секция (Каталог) */
+.catalog {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: (1fr)[1];
+      grid-template-rows: repeat(1, 1fr);
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 560px) {
+  .catalog {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[1];
+        grid-template-rows: repeat(1, 1fr);
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.catalog__item {
+  display: block;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.catalog__name {
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  right: 15%;
+  bottom: 15%;
+  font-size: 32px;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+  z-index: 50;
+  color: white;
+  border: 1px solid white;
+  padding: 25% 0;
+  -webkit-transition: background-color 0.25s ease;
+  transition: background-color 0.25s ease;
+}
+
+.catalog__name:hover {
+  background-color: rgba(34, 53, 111, 0.25);
+}
+
+@media (max-width: 1024px) {
+  .catalog__name {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .catalog__name {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 560px) {
+  .catalog__name {
+    font-size: 18px;
+  }
+}
+
+.catalog__photo {
+  position: relative;
+  max-width: 480px;
+  overflow: hidden;
+  padding: 0 0 100% 0;
+}
+
+.catalog__photo img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
