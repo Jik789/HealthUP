@@ -665,4 +665,13 @@ h3 {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: -webkit-transform 0.35s ease;
+  transition: -webkit-transform 0.35s ease;
+  transition: transform 0.35s ease;
+  transition: transform 0.35s ease, -webkit-transform 0.35s ease;
+}
+
+.catalog__photo img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
