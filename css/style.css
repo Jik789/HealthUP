@@ -867,3 +867,157 @@ h3 {
     font-size: 12px;
   }
 }
+
+/* Шестая секция (Отзыв 2) */
+.page-review-2 {
+  background-color: #22356F;
+}
+
+.review-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 560px) {
+  .review-2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 20px;
+  }
+}
+
+.opinion-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 960px;
+          flex: 0 1 960px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0 40px;
+}
+
+@media (max-width: 560px) {
+  .opinion-2 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 320px;
+            flex: 0 1 320px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    padding: 10px 15px 0 15px;
+  }
+}
+
+.review__photo-2 {
+  overflow: hidden;
+}
+
+.review__photo-2 img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: -webkit-transform 0.75s ease;
+  transition: -webkit-transform 0.75s ease;
+  transition: transform 0.75s ease;
+  transition: transform 0.75s ease, -webkit-transform 0.75s ease;
+}
+
+.review__photo-2 img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+@media (max-width: 560px) {
+  .review__photo-2 {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+}
+
+.opinion__heading-2 {
+  text-transform: uppercase;
+  color: white;
+  font-size: 16px;
+}
+
+@media (max-width: 1024px) {
+  .opinion__heading-2 {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .opinion__heading-2 {
+    font-size: 12px;
+  }
+}
+
+.opinion__main-2 {
+  font-size: 34px;
+  color: white;
+  font-weight: bold;
+}
+
+.opinion__main-2 span {
+  font-size: 40px;
+  color: #62D0DF;
+}
+
+@media (max-width: 1024px) {
+  .opinion__main-2 {
+    font-size: 26px;
+  }
+  .opinion__main-2 span {
+    font-size: 30px;
+    color: #62D0DF;
+  }
+}
+
+@media (max-width: 768px) {
+  .opinion__main-2 {
+    font-size: 18px;
+  }
+  .opinion__main-2 span {
+    font-size: 22px;
+    color: #62D0DF;
+  }
+}
+
+@media (max-width: 560px) {
+  .opinion__main-2 {
+    font-size: 22px;
+  }
+  .opinion__main-2 span {
+    font-size: 24px;
+    color: #62D0DF;
+  }
+}
+
+.opinion__footer-2 {
+  text-transform: uppercase;
+  color: #62D0DF;
+  font-size: 16px;
+}
+
+@media (max-width: 1024px) {
+  .opinion__footer-2 {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .opinion__footer-2 {
+    font-size: 12px;
+  }
+}
