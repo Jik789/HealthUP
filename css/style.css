@@ -793,6 +793,15 @@ h3 {
      object-fit: cover;
   width: 100%;
   height: 100%;
+  -webkit-transition: -webkit-transform 0.75s ease;
+  transition: -webkit-transform 0.75s ease;
+  transition: transform 0.75s ease;
+  transition: transform 0.75s ease, -webkit-transform 0.75s ease;
+}
+
+.review__photo img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .opinion__heading {
