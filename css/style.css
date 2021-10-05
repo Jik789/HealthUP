@@ -675,3 +675,69 @@ h3 {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
+
+/* Четвертая секция (Программа) */
+.program {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 240px 240px;
+      grid-template-rows: 240px 240px;
+  gap: 30px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+}
+
+@media (max-width: 560px) {
+  .program {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[1];
+        grid-template-rows: repeat(1, 1fr);
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.program__item {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-collapse: collapse;
+}
+
+.program__name {
+  font-size: 24px;
+  color: #22356F;
+  margin: 0 0 10px 0;
+  -webkit-transition: color 0.15s ease;
+  transition: color 0.15s ease;
+}
+
+.program__name:hover {
+  color: orange;
+}
+
+.program__discription {
+  font-size: 16px;
+  color: #22356F;
+  max-width: 300px;
+  -webkit-transition: color 0.15s ease;
+  transition: color 0.15s ease;
+}
+
+@media (max-width: 768px) {
+  .program__discription {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 560px) {
+  .program__discription {
+    font-size: 12px;
+  }
+}

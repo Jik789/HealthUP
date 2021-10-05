@@ -1,0 +1,55 @@
+/* Четвертая секция (Программа) */
+
+.program {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 240px 240px;
+  gap: 30px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  align-items: center;
+  justify-items: center;
+}
+
+@media (max-width: $md3+px) {
+  .program {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.program__item {
+  box-sizing: border-box;
+  border-collapse: collapse;
+}
+
+.program__name {
+  font-size: 24px;
+  color: $dark-blue;
+  margin: 0 0 10px 0;
+  transition: color 0.15s ease;
+  &:hover {
+    color: orange;
+  }
+}
+
+.program__discription {
+  font-size: 16px;
+  color: $dark-blue;
+  max-width: 300px;
+  transition: color 0.15s ease;
+}
+
+@media (max-width: $md2+px) {
+  .program__discription {
+    font-size: 14px
+  }
+}
+
+@media (max-width: $md3+px) {
+  .program__discription {
+    font-size: 12px
+  }
+}
